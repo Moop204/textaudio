@@ -1,8 +1,8 @@
-import { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useState } from "react";
 import { PauseButtonIcon } from "./PauseButtonIcon";
 import { Howl } from "howler";
 import { PlayButtonIcon } from "./PlayButtonIcon";
-
+import { Center, Heading, VStack } from "@chakra-ui/react";
 interface TextAudioParam {
   text: string;
   audioPath: string;
@@ -82,13 +82,53 @@ const TextAudio: FunctionComponent<TextAudioParam> = ({
 
 const Demo = () => {
   return (
-    <div>
-      So then he said
-      <TextAudio
-        audioPath="./song18.mp3"
-        text="Hello there everyone Hello there everyone Hello there everyone Hello there everyone Hello there everyone Hello there everyone Hello there everyone Hello there everyone"
-      ></TextAudio>
-      wowsers what a line that was
-    </div>
+    <VStack>
+      <div>
+        Demo of <a href="https://github.com/Moop204/textaudio">textaudio</a>{" "}
+        component using an exerpt from a{" "}
+        <a href="https://en.wikipedia.org/wiki/Misogyny_Speech">
+          wikipedia article
+        </a>
+        .
+      </div>
+      <Center paddingLeft="20%" paddingRight="20%">
+        <VStack>
+          <Heading>Misogyny Speech</Heading>
+          <div>...</div>
+          <Heading
+            as="h3"
+            size="lg"
+            alignSelf={"start"}
+            textDecoration="underline"
+          >
+            Background
+          </Heading>
+          <div>...</div>
+          <div>
+            Her speech was part of the no confidence motion to have Peter
+            Slipper removed as Speaker over crude and sexist texts sent to his
+            aide.
+            <TextAudio
+              audioPath="./abbott-comment.mp3"
+              text={
+                'Abbott stated that every day Gillard supported Slipper was "another day of shame for a government which should already have died of shame"'
+              }
+            />
+            . Gillard made statements in support of Slipper and linked Abbott's
+            motion to remarks made by Alan Jones in the then-recent Alan Jones
+            shame controversy where the broadcaster said that Julia Gillard's
+            father had died of shame because of his daughter's lies. Gillard
+            said that
+            <TextAudio
+              audioPath="./gillard-speech.mp3"
+              text={
+                '"every day in every way" Abbott was sexist and misogynist.'
+              }
+            />
+          </div>
+          <div>...</div>
+        </VStack>
+      </Center>
+    </VStack>
   );
 };
