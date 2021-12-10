@@ -22,15 +22,18 @@ export const TextAudio: FunctionComponent<TextAudioParam> = ({
   audioPath,
   children,
 }) => {
+  const [playing, setPlaying] = useState(false);
   const [sound, setSound] = useState(
     new Howl({
       src: [audioPath],
       onplay: () => {
         console.log("I am being played");
       },
+      onend: () => {
+        setPlaying(false);
+      },
     })
   );
-  const [playing, setPlaying] = useState(false);
   const playSound = () => {
     sound.play();
   };
