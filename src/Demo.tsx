@@ -1,86 +1,10 @@
-import React, { FunctionComponent, useState } from "react";
-import { PauseButtonIcon } from "./PauseButtonIcon";
-import { Howl } from "howler";
-import { PlayButtonIcon } from "./PlayButtonIcon";
-import { Center, Heading, VStack } from "@chakra-ui/react";
-interface TextAudioParam {
-  text: string;
-  audioPath: string;
-  textColour?: string;
-  bgColour?: string;
-  children?: any;
-}
-export const TextAudio: FunctionComponent<TextAudioParam> = ({
-  text = "default",
-  textColour = "#000000",
-  bgColour = "#ffa033",
-  iconColour = "#000000",
-  audioPath,
-  children,
-}) => {
-  const [sound, setSound] = useState(
-    new Howl({
-      src: [audioPath],
-      onplay: () => {
-        console.log("I am being played");
-      },
-    })
-  );
-  const [playing, setPlaying] = useState(false);
-  const playSound = () => {
-    sound.play();
-  };
-  const pauseSound = () => {
-    sound.pause();
-  };
+import { VStack, Center, Heading } from "@chakra-ui/react";
+import { TextAudio } from "./component/TextAudio";
 
-  const icon = playing ? (
-    <span
-      style={{ lineHeight: "32px" }}
-      onClick={() => {
-        pauseSound();
-        setPlaying(false);
-      }}
-    >
-      <PauseButtonIcon />
-    </span>
-  ) : (
-    <span
-      style={{ lineHeight: "32px" }}
-      onClick={() => {
-        playSound();
-        setPlaying(true);
-      }}
-    >
-      <PlayButtonIcon />
-    </span>
-  );
-
-  return (
-    <span
-      style={{
-        borderRadius: "4px",
-        paddingLeft: "8px",
-        paddingRight: "8px",
-        paddingBottom: "4px",
-        paddingTop: "2px",
-        color: textColour,
-        background: bgColour,
-      }}
-    >
-      {icon}
-      <span
-        style={{
-          paddingLeft: "8px",
-          textIndent: "8px",
-        }}
-      >
-        {text}
-      </span>
-    </span>
-  );
-};
-
+/**
+ * Example of TextAudio components using voice clips during an Australian parliament debate.
+ *
+ */
 export const Demo = () => {
   return (
     <VStack>
@@ -163,6 +87,7 @@ export const Demo = () => {
             way out" and that he had stood next to a sign "ditch the witch" in
             reference to her political role.
           </div>
+          <div>...</div>
         </VStack>
       </Center>
     </VStack>

@@ -1,11 +1,7 @@
-import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Demo } from "./TextAudio";
+import { Demo } from "./Demo";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <p>
       <Demo />
