@@ -4,7 +4,7 @@ import { Howl } from "howler";
 import { PlayButtonIcon } from "./icons/PlayButtonIcon";
 
 interface TextAudioParam {
-  text: string;
+  text?: string;
   audioPath: string;
   textColour?: string;
   bgColour?: string;
@@ -14,7 +14,7 @@ interface TextAudioParam {
 }
 
 export const TextAudio: FunctionComponent<TextAudioParam> = ({
-  text = "default",
+  text = "",
   textColour = "#000000",
   bgColour = "#ffa033",
   iconColour,
@@ -78,6 +78,7 @@ export const TextAudio: FunctionComponent<TextAudioParam> = ({
         }}
       >
         {text}
+        {children}
       </span>
     </span>
   );
