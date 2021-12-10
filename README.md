@@ -4,7 +4,7 @@
 
 Text with playable audio created using Chakra UI components and Howler.js. This can be used to help verify claims made in texts. Inspired by this [ABC article](https://www.abc.net.au/news/2021-03-26/the-base-tapes-secret-recordings-australian-recruitment/13255994). 
 
-
+Demo available [here](https://moop204.github.io/textaudio/)
 
 ## Basics
 Two ways to create a TextAudio component and fill it up with text. Either way will require an audioPath attribute that sources the audio clip to play. All other additional features are passed as a parameter. 
