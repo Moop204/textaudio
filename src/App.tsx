@@ -1,13 +1,13 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
-import { TextAudio } from "./component/TextAudio";
 import { Demo } from "./Demo";
 
 function App() {
   return (
     <ChakraProvider>
       <p style={{ paddingLeft: "40px" }}>
-        <Demo />
+        {" "}
+        <Demo />{" "}
       </p>
     </ChakraProvider>
   );
