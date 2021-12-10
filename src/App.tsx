@@ -7,6 +7,7 @@ function App() {
     <ChakraProvider>
       <p style={{ paddingLeft: "40px" }}>
         {" "}
+        wubadub
         <Demo />{" "}
       </p>
     </ChakraProvider>

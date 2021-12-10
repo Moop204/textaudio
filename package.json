@@ -9,7 +9,7 @@
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist -b gh-pages"
   },
-  "homepage": "https://moop204.github.io/textaudio",
+  "homepage": "https://moop204.github.io/",
   "dependencies": {
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "^11",
