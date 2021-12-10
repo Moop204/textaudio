@@ -1,5 +1,34 @@
 # textaudio
-Text with associated audio created using Chakra UI components.
+
+![basic-sample](media/sample-screen.png "")
+
+Text with playable audio created using Chakra UI components and Howler.js. Inspired by this [ABC article](https://www.abc.net.au/news/2021-03-26/the-base-tapes-secret-recordings-australian-recruitment/13255994). 
+
+## Basics
+Two ways to create a TextAudio component and fill it up with text. Either way will require an audioPath attribute that sources the audio clip to play. All other additional features are passed as a parameter. 
+#### Parameter Text / Single Line
+Text is passed in as a parameter of the TextAudio component.
+```ts
+<TextAudio
+  audioPath="./audio-file.mp3"
+  text={
+    'Here are some words'
+  }
+/>
+```
+
+#### Child Text
+Text is passed in as a parameter of the TextAudio component.
+```ts
+<TextAudio
+  audioPath="./audio-file.mp3"
+>
+  Here are some words
+</TextAudio>
+```
+
+## Parameters
+
 
 # Credits / Attributions
 

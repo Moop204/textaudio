@@ -75,13 +75,6 @@ export const Demo = () => {
               iconColour="#bbbb21"
               iconBgColour="#fb2221"
             />
-            <TextAudio
-              audioPath="./gillard-speech.mp3"
-              iconColour="#bbbb21"
-              iconBgColour="#fb2221"
-            >
-              a dog bit my Charlie
-            </TextAudio>
           </div>
           <div>
             Within the speech, Gillard noted a number of statements Abbott had
