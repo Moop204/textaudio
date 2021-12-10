@@ -29,6 +29,28 @@ Text is passed in as a parameter of the TextAudio component.
 
 ## Parameters
 
+#### text : string
+*optional*
+Highlighted text. Can be passed as a child instead to avoid use of parameter.
+
+#### audioPath : string
+*mandatory*
+Path to the audio file that is to be played when clicking on the component.
+
+#### textColour : string
+*optional*
+Defines the colour of the text. By default is "#000000".
+#### bgColour : string 
+*optional*
+Defines the colour of the text. By default is "#ffa033".
+
+#### iconColour : string 
+*optional*
+Defines the colour of the pause and play icons. By default is "#ffffff".
+#### iconBgColour : string 
+*optional*
+Defines the colour of the background of the pause and play icons. By default is "#000000".
+
 
 # Credits / Attributions
 
