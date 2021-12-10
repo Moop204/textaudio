@@ -2,7 +2,9 @@
 
 ![basic-sample](media/sample-screen.png "")
 
-Text with playable audio created using Chakra UI components and Howler.js. Inspired by this [ABC article](https://www.abc.net.au/news/2021-03-26/the-base-tapes-secret-recordings-australian-recruitment/13255994). 
+Text with playable audio created using Chakra UI components and Howler.js. This can be used to help verify claims made in texts. Inspired by this [ABC article](https://www.abc.net.au/news/2021-03-26/the-base-tapes-secret-recordings-australian-recruitment/13255994). 
+
+
 
 ## Basics
 Two ways to create a TextAudio component and fill it up with text. Either way will require an audioPath attribute that sources the audio clip to play. All other additional features are passed as a parameter. 
@@ -52,7 +54,7 @@ Defines the colour of the pause and play icons. By default is "#ffffff".
 Defines the colour of the background of the pause and play icons. By default is "#000000".
 
 
-# Credits / Attributions
+## Credits / Attributions
 
 [Play Button](https://game-icons.net/1x1/guard13007/play-button.html) by Guard13007 under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
 
@@ -63,3 +65,6 @@ Defines the colour of the background of the pause and play icons. By default is 
 [Julia Gillard Speech](https://www.youtube.com/watch?v=ihd7ofrwQX0)
 
 [Tony Abbott Comment](https://www.youtube.com/watch?v=z_qW7Oo4Z-I)
+
+## License 
+[MIT](https://mit-license.org/) for the code and the respective license listed above for the audio assets.
