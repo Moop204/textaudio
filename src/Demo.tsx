@@ -72,6 +72,8 @@ export const Demo = () => {
               text={
                 '"every day in every way" Abbott was sexist and misogynist.'
               }
+              iconColour="#bbbb21"
+              iconBgColour="#fb2221"
             />
           </div>
           <div>

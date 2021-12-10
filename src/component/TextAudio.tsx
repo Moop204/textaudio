@@ -8,6 +8,8 @@ interface TextAudioParam {
   audioPath: string;
   textColour?: string;
   bgColour?: string;
+  iconColour?: string;
+  iconBgColour?: string;
   children?: any;
 }
 
@@ -15,7 +17,8 @@ export const TextAudio: FunctionComponent<TextAudioParam> = ({
   text = "default",
   textColour = "#000000",
   bgColour = "#ffa033",
-  // iconColour = "#000000",
+  iconColour,
+  iconBgColour,
   audioPath,
   children,
 }) => {
@@ -42,6 +45,8 @@ export const TextAudio: FunctionComponent<TextAudioParam> = ({
         setPlaying(false);
       }}
       lineHeight="32px"
+      iconColour={iconColour}
+      iconBgColour={iconBgColour}
     />
   ) : (
     <PlayButtonIcon
